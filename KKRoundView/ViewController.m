@@ -43,17 +43,17 @@
     frame.origin.y = frame.origin.y - 100;
     
     self.roundView2 = [[KKRoundView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width, frame.size.height)];
-    self.roundView2.color = RGBCOLOR(253, 206, 21);
+    self.roundView2.color = RGBCOLOR(254, 225, 124);
     self.roundView2.hidden = YES;
     [self.view addSubview:self.roundView2];
     
-    self.roundView3 = [[KKRoundView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 22, frame.size.width, frame.size.height)];
-    self.roundView3.color = RGBCOLOR(253, 206, 21);
+    self.roundView3 = [[KKRoundView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 25, frame.size.width, frame.size.height)];
+    self.roundView3.color = RGBCOLOR(254, 242, 199);
     self.roundView3.hidden = YES;
     [self.view addSubview:self.roundView3];
     
-    self.roundView4 = [[KKRoundView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 38, frame.size.width, frame.size.height)];
-    self.roundView4.color = RGBCOLOR(253, 206, 21);
+    self.roundView4 = [[KKRoundView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 40, frame.size.width, frame.size.height)];
+    self.roundView4.color = RGBCOLOR(255, 253, 246);
     self.roundView4.hidden = YES;
     [self.view addSubview:self.roundView4];
     
@@ -85,8 +85,9 @@
     } completion:^(BOOL finished) {
         view.needRound = NO;
         
-        if (!_isTop)
+        if (!_isTop) {
             return;
+        }
         
         _isTop = NO;
         
@@ -95,8 +96,8 @@
         _roundView4.hidden = NO;
 //        _roundView5.hidden = NO;
         [self animateWith:_roundView1 offset:10 alpha:0];
-        [self animateWith:_roundView2 offset:30 alpha:0];
-        [self animateWith:_roundView3 offset:50 alpha:0];
+        [self animateWith:_roundView2 offset:25 alpha:0];
+        [self animateWith:_roundView3 offset:45 alpha:0];
         [self animateWith:_roundView4 offset:70 alpha:0];
 //        [self animateWith:_roundView5 offset:40 alpha:0];
         
