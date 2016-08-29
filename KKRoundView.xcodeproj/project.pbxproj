@@ -14,7 +14,8 @@
 		8260B25E1D6D37430065AA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8260B25D1D6D37430065AA27 /* Assets.xcassets */; };
 		8260B26A1D6D39490065AA27 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8260B2691D6D39490065AA27 /* LaunchViewController.m */; };
 		8260B26C1D6D39F60065AA27 /* LaunchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8260B26B1D6D39F60065AA27 /* LaunchViewController.storyboard */; };
-		8260B26F1D6D59A30065AA27 /* KKRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8260B26E1D6D59A30065AA27 /* KKRoundView.m */; };
+		8260B27E1D742DF80065AA27 /* KKRoundAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8260B27B1D742DF80065AA27 /* KKRoundAnimateView.m */; };
+		8260B27F1D742DF80065AA27 /* KKRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8260B27D1D742DF80065AA27 /* KKRoundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,10 @@
 		8260B2681D6D39490065AA27 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		8260B2691D6D39490065AA27 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		8260B26B1D6D39F60065AA27 /* LaunchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchViewController.storyboard; path = ../LaunchViewController.storyboard; sourceTree = "<group>"; };
-		8260B26D1D6D59A30065AA27 /* KKRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRoundView.h; sourceTree = "<group>"; };
-		8260B26E1D6D59A30065AA27 /* KKRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRoundView.m; sourceTree = "<group>"; };
+		8260B27A1D742DF80065AA27 /* KKRoundAnimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRoundAnimateView.h; sourceTree = "<group>"; };
+		8260B27B1D742DF80065AA27 /* KKRoundAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRoundAnimateView.m; sourceTree = "<group>"; };
+		8260B27C1D742DF80065AA27 /* KKRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRoundView.h; sourceTree = "<group>"; };
+		8260B27D1D742DF80065AA27 /* KKRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRoundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		8260B2501D6D37430065AA27 /* KKRoundView */ = {
 			isa = PBXGroup;
 			children = (
+				8260B2791D742DD60065AA27 /* RoundView */,
 				8260B2541D6D37430065AA27 /* AppDelegate.h */,
 				8260B2551D6D37430065AA27 /* AppDelegate.m */,
 				8260B2571D6D37430065AA27 /* ViewController.h */,
@@ -75,8 +79,6 @@
 				8260B2681D6D39490065AA27 /* LaunchViewController.h */,
 				8260B2691D6D39490065AA27 /* LaunchViewController.m */,
 				8260B26B1D6D39F60065AA27 /* LaunchViewController.storyboard */,
-				8260B26D1D6D59A30065AA27 /* KKRoundView.h */,
-				8260B26E1D6D59A30065AA27 /* KKRoundView.m */,
 			);
 			path = KKRoundView;
 			sourceTree = "<group>";
@@ -87,6 +89,17 @@
 				8260B2521D6D37430065AA27 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8260B2791D742DD60065AA27 /* RoundView */ = {
+			isa = PBXGroup;
+			children = (
+				8260B27A1D742DF80065AA27 /* KKRoundAnimateView.h */,
+				8260B27B1D742DF80065AA27 /* KKRoundAnimateView.m */,
+				8260B27C1D742DF80065AA27 /* KKRoundView.h */,
+				8260B27D1D742DF80065AA27 /* KKRoundView.m */,
+			);
+			path = RoundView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +174,9 @@
 			files = (
 				8260B2591D6D37430065AA27 /* ViewController.m in Sources */,
 				8260B2561D6D37430065AA27 /* AppDelegate.m in Sources */,
+				8260B27E1D742DF80065AA27 /* KKRoundAnimateView.m in Sources */,
+				8260B27F1D742DF80065AA27 /* KKRoundView.m in Sources */,
 				8260B2531D6D37430065AA27 /* main.m in Sources */,
-				8260B26F1D6D59A30065AA27 /* KKRoundView.m in Sources */,
 				8260B26A1D6D39490065AA27 /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +318,7 @@
 				8260B2671D6D37430065AA27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
